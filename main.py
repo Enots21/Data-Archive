@@ -3,12 +3,12 @@ import matplotlib.pyplot as plt
 import pandas as pd
 
 
-table_link = 'https://docs.google.com/spreadsheets/d/15xrQdG2kQcYiUwjLyloppOjZwoUtKn-bOFOKPTEOWYU/edit?usp=sharing'
-table_id = '15xrQdG2kQcYiUwjLyloppOjZwoUtKn-bOFOKPTEOWYU'
+table_link = 'https://docs.google.com/spreadsheets/d/token/edit?usp=sharing'
+table_id = 'token'
 
 def client_init_json() -> Client:
     """Создание клиента для работы с Google Sheets."""
-    return service_account(filename='apikeygg-451208-1b175f90ccc4.json')
+    return service_account(filename='название вашего.json')
 
 def get_table_by_url(client: Client, table_url):
     """Получение таблицы из Google Sheets по ссылке."""
